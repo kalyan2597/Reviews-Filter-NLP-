@@ -17,8 +17,8 @@ from happytransformer import HappyTextClassification
 
 tqdm.pandas()
 
-def reviewFilter(df):
-    df=pd.read_csv('chrome_reviews.csv')
+def reviewFilter(dfe):
+    df=pd.read_csv(dfe)
     df.head()
 
     df.dropna(subset=['Text'],inplace=True)

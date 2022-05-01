@@ -14,7 +14,7 @@ def main():
     if st.button('predict'):
         df_filtered = reviewFilter(file)
         st.success("successfully filter the reviews")
-        st.dataframe(df_filtered,600,600)
+        st.dataframe(data=df_filtered,width=800,height=800)
 
 if __name__=='__main__':
     main()
